@@ -1,0 +1,117 @@
+
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu {
+    width: var(--docwidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 2rem ;
+}
+
+#check {
+    display: flex;
+}
+
+#check:checked~#menu {
+    display: flex;
+    flex-direction: column;
+    width: var(--docwidth);
+    margin: auto;
+}
+#check:checked~label>img {
+    content: url(../images/icon-close.svg);
+}
+#menu {
+    position: rela;
+    top: 150px;
+   
+    display:flex;
+  
+    text-align: center;
+    border-radius: 10px;
+    padding: 3rem;
+    background-color: hsl(357, 82%, 32%);
+    box-shadow: 0px 23px 36px -4px rgba(49, 32, 32, 0.75);
+    -webkit-box-shadow: 0px 23px 36px -4px rgba(193, 193, 193, 0.75);
+    -moz-box-shadow: 0px 23px 36px -4px rgba(193, 193, 193, 0.75);
+}
+
+#menu ul,
+#menu li {
+    padding: .5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    
+
+}
+
+#menu ul {
+    border-radius: 10px;
+    background-color: hsl(250, 67%, 48%);
+}
+
+
+
+#menu span {
+    display:inline;
+    padding: .6rem;
+    width: 20px;
+    color: #e7dfe4;
+}
+
+
+/* Pour les textes */
+.text {
+    flex: 2; /* Les textes prennent autant d'espace que possible */
+    font-size: smaller;
+    color: rgb(146, 127, 255);
+    font-weight: 300;
+  
+  }
+
+
+/* Style pour les titres */
+.flex-container h2 {
+    font-size: 54px;
+    margin-bottom: 12px;
+}
+
+/* Style pour les paragraphes de texte */
+.flex-container p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 576px) {
+    #bloc {
+      width: 80%;
+    }
+
+    /* format tablette */
+    #hello {
+        font-size: 2, 5rem;
+        color: rgb(41, 156, 56);
+    
+      }
+
+    /*Format desktop(au dessus de 1024px)*/
+  }
+  @media screen and (min-width: 1024px) {
+    #block {
+      width: 100%;
+    }
+  }
+
+  #hello {
+    font-size: 3, 5rem;
+   color: rgb(69, 42, 165);
+  }
+
+
+  /* mes média devront être systématiquement en bas de pages en ordre croissant, attention à l'espace avant la parenthese, deux espaces */

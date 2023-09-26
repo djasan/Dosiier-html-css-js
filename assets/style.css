@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    --light-red: #ff525d;
+    --very-light-red: #ff7a85;
+    --very-dark-blue: #1f3f5b;
+    --very-dark-desaturated: #3f4164;
+    --docwidth: 90%;
+  }
+
+
+#menu ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+#menu li{
+    padding: .5rem 1rem;
+    background: #3830329d;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    border: #fff 3px solid;
+    transition: all .2s;
+    position: relative;
+}
+#menu li:hover{
+    cursor: pointer;
+    background: rgb(122, 10, 48);
+    color: #1b191a;
+    border: hwb(348 8% 90%) 3px solid;
+}
+#menu .submenu{
+    position:absolute;
+    top: 50px;
+    left:0;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .5s;
+    
+}
+/* class pour un toggle sur mes .submenu */
+.hide{
+    height: 0;
+}
+.show{
+    height: 120px;
+}
+header {
+    color: hsl(244, 11%, 26%);
+    height:150vh;
+    background-color: #ff525d;
+    background-color: linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-color: -webkit-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-color: -moz-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-image: url(./css/morphine.png);
+    background-position: 35% 37%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 0px 83px;
+    -webkit-border-radius: 0px 0px 0px 83px;
+
+   
+  }
+    /* Pour le conteneur principal */
+
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Les éléments sont placés en colonne */
+    justify-content: space-between; /* Les éléments sont espacés de manière égale */
+  color: black;
+  
+  border-radius: 8px 24px 140px 8px;
+  -webkit-border-radius: 8px 24px 140px 8px;
+  -moz-border-radius: 8px 24px 140px 8px;
+  background: #060707;
+ 
+  
+  
+  
+  }
+
+
+
+/* Pour chaque conteneur d'image et de texte */
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Les éléments à l'intérieur sont placés en colonne */
+    align-items: center; /* Alignez les éléments verticalement au centre */
+    background-image: 18px solid rgb(173, 50, 50) ;
+    /* Pour séparer les paires d'image et de texte */
+    margin-bottom: 10px;
+  }
+  /* Pour les images */
+  .image {
+    flex: 1; /* Les images prennent autant d'espace que possible */
+    padding-right: 10cm; /* Espace entre l'image et le texte */
+    overflow: -moz-hidden-unscrollable;
+    
+  }
+  
+  /* Pour les textes */
+  .text {
+    flex: 1; /* Les textes prennent autant d'espace que possible */
+    font-size: smaller;
+    color: aquamarine;
+    font-weight: 300;
+  
+  }
+  
+  
+  
+  
+   /* CSS pour l'effet éventail avec agrandissement de l'image */
+  .flex-container {
+    /* Ajoutez ici les styles spécifiques pour vos conteneurs */
+    width: 30%;
+    height: 30%;
+    margin: 5px; /* Marge entre les conteneurs */
+    overflow-wrap: normal ; /* Masquer tout contenu qui dépasse du conteneur */
+    position: -webkit-sticky;
+    transition: transform 0.3s ease-in-out; /* Animation de transformation */
+  }
+  
+  .flex-container img {
+    /* Styles de base pour l'image (taille initiale) */
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Animation de transformation */
+  }
+  
+  /* Effet éventail au survol */
+  .flex-container:hover {
+    transform: scale(1.1); /* Agrandir le conteneur au survol */
+  }
+  
+  .flex-container:hover img {
+    transform: scale(1.1); /* Agrandir l'image légèrement plus que le conteneur */
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Effet éventail au survol */
+  .flex-containerr:hover {
+    transform: scale(1.1);} /* Agrandissement au survol */
+  
+  
+  
+  
+  
+  
+  
+  img,input{
+    width: 100%;
+  }
+  
+  
+  
+    /* Style général pour les conteneurs */
+  .flex-container {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center; /* Alignement vertical au centre */
+  }
+  
+  /* Style pour les images */
+  .flex-container img {
+      width: 600px; /* Ajustez la largeur de l'image selon vos besoins */
+      margin-right: 20px; /* Marge à droite de l'image pour l'espace */
+  }
+  
+  /* Style pour le texte */
+  .flex-container .text {
+      flex: 1; /* Le texte prend le reste de l'espace disponible */
+  }
+  
+  /* Style pour les titres */
+  .flex-container h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  /* Style pour les paragraphes de texte */
+  .flex-container p {
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
